@@ -1,0 +1,112 @@
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+header h1 {
+  letter-spacing: 1px;
+}
+header button {
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+header button:hover {
+  background-color: #e0e7ff;
+  transform: scale(1.05);
+}
+
+main .bg-white {
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+main .bg-white:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+#balance {
+  font-weight: 700;
+  color: #4f46e5;
+}
+#income {
+  font-weight: 700;
+}
+#expenses {
+  font-weight: 700;
+}
+
+form input, form select {
+  border: 1px solid #d1d5db;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+form input:focus, form select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.2);
+  outline: none;
+}
+form button {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+form button:hover {
+  transform: translateY(-2px);
+}
+
+#transactionList li {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+#transactionList li:hover {
+  transform: scale(1.02);
+}
+#transactionList button {
+  transition: color 0.3s ease;
+}
+#transactionList button:hover {
+  color: #b91c1c;
+}
+
+#expenseChart {
+  animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+body.bg-gray-900 {
+  background: #111827;
+  color: #e5e7eb;
+}
+body.bg-gray-900 header {
+  background: linear-gradient(90deg, #1e3a8a, #4338ca);
+}
+body.bg-gray-900 main .bg-white {
+  background: #1f2937;
+  color: #e5e7eb;
+  border: 1px solid #374151;
+}
+body.bg-gray-900 form input,
+body.bg-gray-900 form select {
+  background: #111827;
+  color: #e5e7eb;
+  border: 1px solid #374151;
+}
+body.bg-gray-900 form input::placeholder {
+  color: #9ca3af;
+}
+body.bg-gray-900 #transactionList li {
+  background: #1f2937;
+  color: #e5e7eb;
+  border: 1px solid #374151;
+}
+body.bg-gray-900 #transactionList button {
+  color: #f87171;
+}
